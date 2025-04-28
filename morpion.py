@@ -32,6 +32,3 @@ def play(axe_x, axe_y, joueur):
 
 print_board()
 check_valid_move(4, 4)
-
-print_board()
-check_valid_move(4, 4)
