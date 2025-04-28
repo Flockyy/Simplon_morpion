@@ -23,9 +23,10 @@ def print_board():
         print('|'.join(row))
         print('-' * 5)
 
-def jouer_coup(axe_x, axe_y, joueur):
-    if array[axe_x][axe_y] == ' ':
-        array[axe_x][axe_y] = joueur
+def play(axe_x, axe_y, joueur):
+    if check_valid_move(axe_x, axe_y):
+        if array[axe_x][axe_y] == ' ':
+            array[axe_x][axe_y] = joueur
     else:
         print("Case déjà occupée, rejouez.")
 
