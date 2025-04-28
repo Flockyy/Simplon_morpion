@@ -1,6 +1,8 @@
 # morpion game
 
 array = [[' ' for _ in range(3)] for _ in range(3)]
+joueur_x = "X"
+joueur_o = "O"
 
 joueur_x = "X"
 joueur_o = "O"
