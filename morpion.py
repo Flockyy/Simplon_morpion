@@ -24,11 +24,10 @@ def print_board():
         print('-' * 5)
 
 def jouer_coup(axe_x, axe_y, joueur):
-    for i in range(array):
-            if axe_x == i:
-                for j in range(array(i)):
-                    if j == axe_y:   
-                        array(j) = joueur
+    if array[axe_x][axe_y] == ' ':
+        array[axe_x][axe_y] = joueur
+    else:
+        print("Case déjà occupée, rejouez.")
 
 print_board()
 check_valid_move(4, 4)
